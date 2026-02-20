@@ -1,0 +1,13 @@
+$day-size: 100px;
+$day-gap: 1px;
+$day-border: 1px;
+$day-font-size: 30px;
+$calendar-padding: 10px;
+$columns: 7;
+$columns-width: $columns * $day-size;
+$padding-width: 2 * $calendar-padding;
+$gaps-width: ($columns - 1) * $day-gap;
+$calendar-width: $columns-width + $padding-width + $gaps-width;
+$index: 0;
+$days: mon, tue, wed, thu, fri, sat, sun;
+$cell-total: $day-size + $day-gap + $day-border * 2;
