@@ -17,6 +17,7 @@ body {
   width: $calendar-width;
   gap: $day-gap;
   flex-wrap: wrap;
+  box-sizing: border-box;
 
   &__day {
     height: $day-size;
