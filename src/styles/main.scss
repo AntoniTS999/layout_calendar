@@ -40,11 +40,10 @@ body {
   }
 }
 
-@each $day in $days {
-  $idx: list.index($days, $day) - 1;
+@each $day, $index in $days-map {
   .calendar--start-day-#{$day} {
     .calendar__day:first-child {
-      margin-left: calc(#{$cell-total} * #{$idx});
+      margin-left: calc(#{$cell-total} * $index);
     }
   }
 }
